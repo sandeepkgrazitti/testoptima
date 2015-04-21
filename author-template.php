@@ -120,9 +120,9 @@ function get_the_author_meta( $field = '', $user_id = false ) {
     if(isset( $authordata->$field )){
 		$value = $authordata->$field;
 	}
-	else{
-	$value =  '';
-    }
+	//else{
+	//$value =  '';
+   // }
 	/**
 	 * Filter the value of the requested user metadata.
 	 *
