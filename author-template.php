@@ -172,6 +172,7 @@ function get_the_author_link() {
 	} else {
 		return get_the_author();
 	}
+	echo "sachin";
 }
 
 /**
