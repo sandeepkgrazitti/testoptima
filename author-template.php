@@ -117,9 +117,12 @@ function get_the_author_meta( $field = '', $user_id = false ) {
 
 	if ( in_array( $field, array( 'login', 'pass', 'nicename', 'email', 'url', 'registered', 'activation_key', 'status' ) ) )
 		$field = 'user_' . $field;
-
-	$value = isset( $authordata->$field ) ? $authordata->$field : '';
-
+    if(isset( $authordata->$field )){
+		$value = $authordata->$field;
+	}
+	else{
+	$value =  '';
+    }
 	/**
 	 * Filter the value of the requested user metadata.
 	 *
