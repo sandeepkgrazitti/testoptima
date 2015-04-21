@@ -169,6 +169,7 @@ function the_author_meta( $field = '', $user_id = false ) {
  * author's name.
  */
 function get_the_author_link() {
+    echo "sandeep";
 	if ( get_the_author_meta('url') ) {
 		return '<a href="' . esc_url( get_the_author_meta('url') ) . '" title="' . esc_attr( sprintf(__("Visit %s&#8217;s website"), get_the_author()) ) . '" rel="author external">' . get_the_author() . '</a>';
 	} else {
