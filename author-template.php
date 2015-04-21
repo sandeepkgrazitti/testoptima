@@ -56,10 +56,12 @@ function get_the_author($deprecated = '') {
  * @return string The author's display name, from get_the_author().
  */
 function the_author( $deprecated = '', $deprecated_echo = true ) {
-	if ( !empty( $deprecated ) )
+	if ( !empty( $deprecated ) ){
 		_deprecated_argument( __FUNCTION__, '2.1' );
-	if ( $deprecated_echo !== true )
+        }
+	if ( $deprecated_echo !== true ){
 		_deprecated_argument( __FUNCTION__, '1.5', __('Use <code>get_the_author()</code> instead if you do not want the value echoed.') );
+        }
 	if ( $deprecated_echo )
 		echo get_the_author();
 	return get_the_author();
