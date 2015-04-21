@@ -1,7 +1,7 @@
 <?php
 /**
  * Author Template functions for use in themes.
- *
+ * sandeep
  * These functions must be used within the WordPress Loop.
  *
  * @link http://codex.wordpress.org/Author_Templates
